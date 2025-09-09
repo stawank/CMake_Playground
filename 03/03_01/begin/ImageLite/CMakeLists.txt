@@ -1,7 +1,8 @@
 ## Important file in project
 cmake_minimum_required(VERSION 3.10)
-project(ImageLite VERSION 1.0
-DESCRIPTION "CMake build and scripting"
+project(ImageLite 
+    VERSION 1.0
+    DESCRIPTION "CMake build and scripting"
 )
 
 
@@ -44,7 +45,7 @@ add_custom_command(
     VERBATIM
 )
 
-add_custom_target(build_info
+add_custom_target(build_info ALL 
     DEPENDS ${CMAKE_BINARY_DIR}/build_info.txt    
 )
 
