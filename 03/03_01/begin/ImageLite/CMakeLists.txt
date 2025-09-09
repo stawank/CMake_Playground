@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(ImageLite 
     VERSION 1.0
-    DESCRIPTION "CMake build and scripting"
+    DESCRIPTION "Simple image processing library and tool"
 )
 
 
@@ -27,6 +27,28 @@ add_custom_target(runblur
     DEPENDS imagelite
     WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
     COMMENT "Running the cli tool with sample arguments"
+)
+
+
+# Pre build commands
+
+add_custom_command(
+    TARGET imagelite
+    PRE_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy 
+        "${CMAKE_SOURCE_DIR}/README.md"
+        "${CMAKE_BINARY_DIR}/bin/README.md"
+    COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/temp"
+    COMMENT "Setting up build environment"
+)
+
+## Post build command
+add_custom_command(
+    TARGET imagelite
+    POST_BUILD
+
+    COMMAND ${CMAKE_COMMAND} -E rm -rf "${CMAKE_BINARY_DIR}/temp"
+    COMMENT "Post build cleanup"
 )
 
 add_custom_command(
