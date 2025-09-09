@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimagelite_filters.a CMakeFiles/imagelite_filters.dir/src/filters.cpp.o
+/usr/bin/ranlib libimagelite_filters.a

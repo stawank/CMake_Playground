@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/imagelite.dir/apps/cli/src/main.cpp.o -o bin/imagelite  libs/core/libimagelite_core.a libs/filters/libimagelite_filters.a libs/core/libimagelite_core.a 

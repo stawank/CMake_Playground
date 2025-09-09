@@ -1,0 +1,3 @@
+/home/stawan/Desktop/repos/CMakeExercise/02/02_02/end/HelloCMake/build/CMakeFiles/hello.dir
+/home/stawan/Desktop/repos/CMakeExercise/02/02_02/end/HelloCMake/build/CMakeFiles/edit_cache.dir
+/home/stawan/Desktop/repos/CMakeExercise/02/02_02/end/HelloCMake/build/CMakeFiles/rebuild_cache.dir

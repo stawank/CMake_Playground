@@ -1,0 +1,30 @@
+name: Build and Test
+
+on: 
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: sudo apt-get install -y libgtest-dev
+    
+    - name: Configure
+      run: cmake -B build -DIMAGELITE_BUILD_TESTS=ON
+    
+    - name: Build
+      run: cmake --build build
+    
+    - name: Test
+      run: ctest --test-dir build --output-on-failure

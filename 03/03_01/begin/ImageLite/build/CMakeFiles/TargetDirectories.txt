@@ -1,0 +1,10 @@
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/CMakeFiles/imagelite.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/CMakeFiles/run.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/CMakeFiles/edit_cache.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/CMakeFiles/rebuild_cache.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/libs/core/CMakeFiles/imagelite_core.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/libs/core/CMakeFiles/edit_cache.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/libs/core/CMakeFiles/rebuild_cache.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/libs/filters/CMakeFiles/imagelite_filters.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/libs/filters/CMakeFiles/edit_cache.dir
+/home/stawan/Desktop/repos/CMakeExercise/03/03_01/begin/ImageLite/build/libs/filters/CMakeFiles/rebuild_cache.dir
