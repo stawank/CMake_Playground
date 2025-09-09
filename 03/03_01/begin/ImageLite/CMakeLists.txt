@@ -8,6 +8,21 @@ project(ImageLite
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(SAMPLE_IMAGES_DIR ${PROJECT_SOURCE_DIR}/sample_images)
+
+function(add_imagelite_module name use_stb)
+    add_library(${name} STATIC ${ARGN})
+
+    target_include_directories(${name}
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include)
+    if(use_stb)
+        target_include_directories(${name}
+            PRIVATE 
+            ${CMAKE_SOURCE_DIR}/external/stb
+        )
+    endif()
+endfunction()
+
 add_subdirectory(libs/core)
 add_subdirectory(libs/filters)
 
