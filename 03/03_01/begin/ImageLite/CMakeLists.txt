@@ -1,3 +1,4 @@
+## Important file in project
 cmake_minimum_required(VERSION 3.10)
 project(ImageLite)
 
@@ -16,6 +17,17 @@ add_custom_target(run
     WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
     COMMENT "Running the cli tool with sample arguments"
 )
+
+add_custom_target(runblur
+    COMMAND imagelite blur ${SAMPLE_IMAGES_DIR}/input.jpg ${SAMPLE_IMAGES_DIR}/outputblurred.jpg 5
+    DEPENDS imagelite
+    WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+    COMMENT "Running the cli tool with sample arguments"
+)
+
+#add_custom_command(
+#    OUTPUT "${CMAKE_BINARY_DIR}/build_info.txt"
+#)
 
 target_link_libraries(imagelite
     PRIVATE 
